@@ -92,3 +92,149 @@
   width: 22px;
   vertical-align: middle;
 }
+.fourth-container {
+  display: flex;
+  flex-direction: row;
+  padding: 15px 200px;
+  gap: 50px;
+}
+.table-wrap {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 200px;
+  gap: 50px;
+}
+.fourth-container p {
+  width: 90%;
+}
+.btn {
+  border: 1px solid gray;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.btn-wrap {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  gap: 20px;
+}
+.box {
+  border: 2px solid;
+  width: 40%;
+}
+.box-header {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 2px solid;
+}
+.box-conent {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+footer {
+  background: #091634;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.first-ftr {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+}
+.first-ftr p {
+  color: #fffefe;
+}
+
+.first-ftr ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+.li {
+  color: #fffefe;
+  display: block;
+  font-size: 16px;
+  height: 40px;
+  line-height: 38px;
+  margin-right: 5px;
+  text-align: center;
+  width: 40px;
+  border-radius: 50%;
+}
+.second-ftr {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.second-ftr h4 {
+  color: #fffefe;
+  font-size: 16px;
+  letter-spacing: 2px;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+  margin: 0;
+}
+.second-ftr p {
+  color: #fffefe;
+
+  margin: 0 0 1px;
+}
+.detalis span {
+  color: #3ec1d5;
+  font-weight: 700;
+}
+
+.third-ftr h4 {
+  color: #fffefe;
+  font-size: 16px;
+  letter-spacing: 2px;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+  margin: 0;
+}
+.third-ftr {
+  width: 50%;
+}
+.other-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+.other-box {
+  width: 120px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #e0eaf3;
+}
+.other-box p {
+  font-size: 12px;
+}
+.last-ft {
+  background: #ffffff none repeat scroll 0 0;
+  padding: 15px 0;
+  text-align: center;
+}
+.copyright {
+  margin: 0;
+  color: #091634;
+}
+.ft-wrap {
+  background: #091634;
+  display: flex;
+  flex-direction: row;
+  padding: 40px 200px;
+  gap: 15px;
+}
