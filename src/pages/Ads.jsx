@@ -3,11 +3,18 @@ import { useApp } from "../hooks/useApp";
 
 const Ads = () => {
   const { adds } = useApp();
+  console.log(adds);
   return (
     <div className="ads-container">
       {adds.length > 0
         ? adds.map((item, index) => (
-            <div className="ads-card" key={index}>
+            <div
+              className="ads-card"
+              key={index}
+              onClick={() => {
+                window.open(item.redirectionLink, "_blank");
+              }}
+            >
               <img
                 height={230}
                 width={"100%"}

@@ -284,6 +284,7 @@ footer {
   padding: 20px;
   width: 32%;
   height: 300px;
+  cursor: pointer;
   display: flex;
   flex-direction: column;
 }
