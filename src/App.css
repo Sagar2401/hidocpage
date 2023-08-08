@@ -105,6 +105,7 @@
   justify-content: center;
   padding: 15px 200px;
   gap: 50px;
+  height: 260px;
 }
 .fourth-container p {
   width: 90%;
@@ -114,6 +115,9 @@
   padding: 12px 20px;
   border-radius: 8px;
   cursor: pointer;
+}
+.btn:hover {
+  background: #dbeef2;
 }
 .btn-wrap {
   display: flex;
@@ -125,16 +129,33 @@
 .box {
   border: 2px solid;
   width: 40%;
+  height: 100%;
 }
 .box-header {
   padding: 10px;
   text-align: center;
   border-bottom: 2px solid;
+
+  font-weight: 600;
 }
 .box-conent {
   display: flex;
   align-items: center;
   flex-direction: column;
+  padding: 20px;
+}
+.box-conent p {
+  margin: 0;
+  padding: 12px 0;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  width: 80%;
 }
 footer {
   background: #091634;
@@ -185,12 +206,16 @@ footer {
 }
 .second-ftr p {
   color: #fffefe;
-
   margin: 0 0 1px;
 }
 .detalis span {
   color: #3ec1d5;
   font-weight: 700;
+}
+.active {
+  background: #3ec1d5;
+  width: 50%;
+  text-align: center;
 }
 
 .third-ftr h4 {
@@ -237,4 +262,34 @@ footer {
   flex-direction: row;
   padding: 40px 200px;
   gap: 15px;
+}
+.svg-wrap {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+.ads-container {
+  display: flex;
+
+  gap: 5px;
+  flex-direction: row;
+  margin: 10px;
+}
+.ads-card {
+  border: 1px solid #e0eaf3;
+  padding: 20px;
+  width: 32%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+}
+.ads-card p {
+  margin: 0;
+}
+.ads-card h2 {
+  margin: 0;
 }
