@@ -5,17 +5,9 @@ const DetailsCard = () => {
   const { btnData } = useApp();
   return (
     <div className="fourth-container">
-      <p>
-        Dailymed Drug Database The DailyMed database contains 143072 labeling
-        submitted to the Food and Drug Administration (FDA) by companies.
-        DailyMed does not contain a complete listing of labeling for
-        FDA-regulated products (eg, labeling that is not submitted to the FDA).
-      </p>
-      <div className="btn-wrap">
-        {btnData.map((data) => {
-          return <button className="btn">{data}</button>;
-        })}
-      </div>
+      {btnData.map((data, i) => {
+        return <p className={i === 0 ? "active" : ""}>{data}</p>;
+      })}
     </div>
   );
 };

@@ -1,31 +1,32 @@
 import React from "react";
 import { useApp } from "../hooks/useApp";
-import menu from "../Assets/menu.svg";
-import trophy from "../Assets/trophy.png";
+import Tree from "../Assets/tree.svg";
 const HeaderOne = () => {
-  const { headerdata } = useApp();
+  const { headerdata, icons } = useApp();
   return (
     <header className="App-header">
-      <img
-        className="logo"
-        src="https://hidocdr.com/static/media/img-main.8dd53ff3d39d4c24b3df.jpg"
-        alt="no img"
-      />
       <div className="nav-btns">
         {headerdata.map((item, index) => {
+          console.log(icons[item.icon]);
+
           return (
-            <>
-              <p key={index}>{item}</p> |
-            </>
+            <div className="menu">
+              <img src={`${icons[item.icon]}`} height={"20px"} alt="trophy" />
+              <p key={index}>{item.name}</p>
+            </div>
           );
         })}
       </div>
+      <div className="logo-main">
+        <img src={Tree} height={"20px"} alt="trophy" />
+      </div>
+
       <div className="profile-wrap">
-        <img src={menu} alt="menu" />
-        <div className="score">
-          <img src={trophy} height={"20px"} alt="trophy" /> 252
-        </div>
-        <div className="profile">A</div>
+        <input type="text" id="searchInput" placeholder="Search.." />
+        <button className="score">Log in</button>
+        <button style={{ background: "#2EDAB8" }} className="score">
+          Join
+        </button>
       </div>
     </header>
   );
